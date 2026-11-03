@@ -1,0 +1,11 @@
+{
+  "name": "dependabot-pnpm12-lockfile-only-repro",
+  "private": true,
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.11.2",
+      "onFail": "download"
+    }
+  }
+}

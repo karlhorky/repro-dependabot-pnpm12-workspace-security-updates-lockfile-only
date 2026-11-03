@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+    "systeminformation": "5.33.15"
+  }
+}
