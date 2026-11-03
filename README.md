@@ -1,6 +1,8 @@
-# pnpm workspace security updates with lockfile-only
+# pnpm workspace security updates with systeminformation
 
-Test whether Dependabot creates a root security PR when a pnpm workspace member pins `systeminformation@5.33.15` and `dependabot.yml` sets `versioning-strategy: lockfile-only`.
+First test whether Dependabot creates a root security PR for a workspace member pinning `systeminformation@5.33.15`, using the default versioning strategy. This changes only the dependency compared with the earlier pnpm 12 lodash reproduction.
+
+After recording that result, test `versioning-strategy: lockfile-only` separately. The initial commit included that setting, which was removed before any alerts or security update jobs were observed.
 
 The root pins pnpm 12.11.2 and contains the shared two-document `pnpm-lock.yaml`. CI uses Node.js 24 and runs `pnpm install --frozen-lockfile --ignore-scripts`.
 
